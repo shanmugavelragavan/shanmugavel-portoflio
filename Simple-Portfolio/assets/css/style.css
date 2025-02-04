@@ -84,6 +84,7 @@ body.dark {
   padding: 0;
   box-sizing: border-box;
   scrollbar-width: none;
+  scroll-behavior: smooth;
 }
 
 /* ------------------------------------- Base Styles ------------------------------------------------ */
@@ -232,7 +233,6 @@ header {
   top: 0;
   z-index: 50;
   background-clip: var(--glass-bg);
-  /* Corrected property */
   backdrop-filter: var(--glass-blur);
   border: 1px solid var(--glass-border);
   box-shadow: var(--box-shadow);
@@ -361,6 +361,15 @@ header .container {
     right: 0;
     padding: 1rem;
   }
+
+  .navlist ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
 
   .navlist.active {
     display: flex;
